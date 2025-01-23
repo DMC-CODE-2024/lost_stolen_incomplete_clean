@@ -1,6 +1,6 @@
-package com.glocks.cleanup.repository.app;
+package app.cleanup.repository.app;
 
-import com.glocks.cleanup.model.app.SysParam;
+import app.cleanup.entity.app.SysParam;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.JpaSpecificationExecutor;
 import org.springframework.data.jpa.repository.Query;

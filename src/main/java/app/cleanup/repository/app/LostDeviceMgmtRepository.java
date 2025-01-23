@@ -1,6 +1,6 @@
-package com.glocks.cleanup.repository.app;
+package app.cleanup.repository.app;
 
-import com.glocks.cleanup.model.app.LostDeviceMgmt;
+import app.cleanup.entity.app.LostDeviceMgmt;
 import jakarta.transaction.Transactional;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Modifying;
@@ -8,7 +8,6 @@ import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
 
 import java.sql.SQLException;
-import java.time.LocalDateTime;
 import java.util.List;
 
 @Repository

@@ -1,10 +1,12 @@
-package com.glocks.cleanup.service;
+package app.cleanup.service;
 
-import com.glocks.cleanup.repository.app.SysParamRepository;
+import app.cleanup.repository.app.SysParamRepository;
+import app.cleanup.repository.aud.ModulesAuditTrailRepository;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.springframework.stereotype.Component;
 
+import java.util.Date;
 import java.util.function.Predicate;
 
 
@@ -45,4 +47,19 @@ public class Cleanup {
     }
 
     Predicate<String> predicate = Cleanup::isPositiveInteger;
+
+    public long currentTime() {
+        Date date = new Date();
+        long executionStartTime = date.getTime();
+        logger.info("Execution Start Time =" + executionStartTime);
+        return executionStartTime;
+    }
+
+    public long executionfinalTime(long executionStartTime) {
+        long executionfinalTime = this.currentTime() - executionStartTime;
+        logger.info("Final Execution Finish Time" + executionfinalTime);
+        return executionfinalTime;
+    }
+
+
 }

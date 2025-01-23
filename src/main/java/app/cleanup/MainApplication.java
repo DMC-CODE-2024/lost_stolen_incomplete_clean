@@ -1,6 +1,6 @@
-package com.glocks.cleanup;
+package app.cleanup;
 
-import com.glocks.cleanup.service.CleanupService;
+import app.cleanup.service.CleanupService;
 import com.ulisesbocchio.jasyptspringboot.annotation.EnableEncryptableProperties;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.WebApplicationType;

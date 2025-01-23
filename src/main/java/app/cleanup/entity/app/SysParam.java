@@ -1,4 +1,4 @@
-package com.glocks.cleanup.model.app;
+package app.cleanup.entity.app;
 
 import jakarta.persistence.*;
 import lombok.Data;
