@@ -11,7 +11,7 @@ public class ExternalPropertyReader {
     @Value("${serverName}")
     String serverName;
 
-    @Value("${module.name}")
+    @Value("${app.feature.name}")
     String moduleName;
 
     @Value("${minutewise.feature.name}")
